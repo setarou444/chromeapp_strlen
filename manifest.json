@@ -1,6 +1,19 @@
 {
-    "manifest_version": 3,
-    "name":"拡張機能の名前",
-    "version": "1.0.0",
-    "description": "拡張機能の説明"
+  "manifest_version": 3,
+  "name": "文字数数え",
+  "version": "1.0.0",
+  "description": "マウスのドラッグで選択した文字数を数えます。",
+  "content_scripts": [
+    {
+      "matches": [
+        "https://*/*"
+      ],
+      "css": [
+        "css/chrome_strlen.css"
+      ],
+      "js": [
+        "js/action.js"
+      ]
+    }
+  ]
 }

@@ -1,0 +1,33 @@
+#tooltip_strlen {
+    display: none;
+    position: absolute;
+    z-index: 1000;
+    background: #545454;
+    padding: 4px 12px;
+    font-weight: 600;
+    line-height: 1.8;
+    color: #FFF;
+    border-radius: 3px;
+    filter: drop-shadow(0px 1px 4px #aaa);
+}
+
+.ts_down_aroww:before {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -8px;
+    border: 8px solid transparent;
+    border-top: 8px solid #545454;
+}
+
+
+.ts_up_aroww:after {
+    content: "";
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    margin-left: -8px;
+    border: 8px solid transparent;
+    border-bottom: 8px solid #545454;
+}
